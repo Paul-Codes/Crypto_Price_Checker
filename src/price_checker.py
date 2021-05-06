@@ -10,7 +10,7 @@ import yaml
 logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 
 
-conf = yaml.load(open('conf/config.yaml'))
+conf = yaml.load(open('conf/config.yaml'), Loader=yaml.SafeLoader)
 
 #Set the HashiCorp Vault config
 hv_url = conf['hashicorp_vault']['hv_url']
