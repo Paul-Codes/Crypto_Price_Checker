@@ -75,7 +75,6 @@ def main_pricecheck():
             info = client.get_account()
         except:
             send_scriptStopAlert("Binance API Call Failed - Script Stopped")
-            print >> sys.stderr, '\nExiting by failed connection to Binance.\n'
             sys.exit(0)
 
         balance = client.get_asset_balance(asset='ADA')
@@ -115,5 +114,4 @@ if __name__ == '__main__':
         main_pricecheck()
     except KeyboardInterrupt:
         send_scriptStopAlert("Script exited by user")
-        print >> sys.stderr, '\nExiting by user request.\n'
         sys.exit(0)
