@@ -3,4 +3,4 @@ hashicorp_vault:
     user_token: ***ADD Hashicorp Vault UserToken***
 
 script_config:
-    price_variable: 3
+    price_variable: 3vi 
