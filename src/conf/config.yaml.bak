@@ -1,0 +1,6 @@
+hashicorp_vault:
+    hv_url: ***ADD Hashicorp Vault URL***
+    user_token: ***ADD Hashicorp Vault UserToken***
+
+script_config:
+    price_variable = 3

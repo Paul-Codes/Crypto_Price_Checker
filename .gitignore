@@ -3,7 +3,6 @@
 *.log
 *.sql
 *.sqlite
-*.bak
 
 # OS generated files #
 ######################
